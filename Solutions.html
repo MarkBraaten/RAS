@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.13/jquery.min.js'></script>
+    <link rel="stylesheet" src = "css/boostrap.css">
+    <title>Document</title>
+    <style type="text/css">
+        
+        body p{
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif
+
+        }
+        header img{
+            text-align: left;
+            padding-left:15px;
+            padding-top: 8px;
+        }
+        header .login{
+            text-align: right;
+            padding-right:20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        header .top a{ 
+            padding:8px 32px 8px 32px;
+        }
+        header .top-nav{
+            border-top:#dee2e6 1px solid;
+            text-align: right;
+        }
+        header .top-nav a {
+            padding-top:8px;
+        }
+        .top-fold, h1, h3{
+            padding: 0px;
+            margin-top:1em;
+            margin-bottom: 18px;
+            font-family: "Helvetica","Helvetica","Helvetica Neue","Arial",sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .top-fold p{
+            text-align: left;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif;
+        }
+        .top-fold span p{
+            display: block;
+            position: relative;
+            top: 10px;
+            text-align: center;
+            font-size: .85rem;
+        }
+        .services{
+            padding-top: 50px;
+            text-align: center;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif
+        }
+        .service{
+            margin-bottom:40px;
+        }
+        .benefits{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding:30px 5px 0px 5px;
+        }
+        .benefit{
+            padding: 10px;
+        }
+        .benefits2{
+            background:#28a745;
+            padding:30px 5px 20px 5px;
+        }
+        .benefits2 p{
+            color:white;
+        }
+        .cta{
+            padding-top:30px;
+            padding-bottom:80px;
+            text-align: center;
+        }
+        .standard h3{
+
+            text-align: left;
+        }
+        .standard img{
+            padding: 0 3rem;
+            max-width: 360px;
+            width: 100%;
+        }
+        .info{
+            margin-top:100px;
+            border-top:#28a745 2px solid;
+            border-width: 95%;
+            padding: 50px 0px 20px 0px;
+            text-align: center;
+        }
+        @media screen and (max-width: 500px){
+            div.info{
+            }
+        }
+        .users li{
+            text-align: left;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif;
+        }
+        .cta p{
+            text-align: center;
+        }
+        .users {
+            text-align: center;
+        }
+        footer{
+            margin-top:100px;
+            border-top:#dee2e6 1px solid;
+            border-bottom:#dee2e6 1px solid;
+            text-align: center;
+            background: #f7f7f7;
+            padding:15px;
+            bottom:0;
+        }
+        footer img{
+            max-width: 150px;
+        }
+        .background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+
+    .double:before { 
+        /* this is just to undo the :before styling from above */
+        border-top: none; 
+    }   
+    .double:after {
+        border-bottom: 1px solid #4BA045;
+        -webkit-box-shadow: 0 1px 0 0 #4BA045;
+        -moz-box-shadow: 0 1px 0 0 #4BA045;
+        box-shadow: 0 1px 0 0 #4BA045;
+        content: "";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute;
+        top: 45%; left: 0; right: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    form.example input[type=text] {
+       padding: 5px;
+       font-size: 17px;
+       border: 1px solid grey;
+       background: #f1f1f1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="Index.html">
+                            <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                            <div class="login">
+                                    <a href="#">Login</a>
+                                    <button class="btn btn-success" href="#">Get Started</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="top-nav">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <ul class="nav" id="nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Solutions.html">Business Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Branches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Resources.html">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none .d-xl-block">
+                            <div class="col col-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="top-fold">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-sm-12">
+                    <h1>Business Solutions by
+                        <br>
+                        Registered Agents, Inc.</h1>
+                    <p>
+                        At Registered Agents Inc. we provide solutions for thousands of businesses, each with their own model, structure and far-reaching goals. 
+                        To assist this wide-ranging field of clients in maintaining and enhancing their businesses through corporate compliance and registered agent service,
+                        Registered Agents Inc. has weaved a vast and secure network made primarily of two components: technology and service.
+                    </p>
+                    <p>
+                        Learn how Registered Agents Inc. can serve your business.
+                    </p>
+                    <p>
+                        Select your businesstype below:
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center my-row">
+                <div class="col-md-4 biz-col col-sm-8"><a href=#>Start-ups</a></div>
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">Small and Mid-sized Businesses</a></div>
+                
+                <div class="w-100"></div>
+
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">Nationwide Companies</a></div>
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">Law Firms</a></div>
+
+                <div class="w-100"></div>
+
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">CPA Firms</a></div>
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">Registered Agent Companies</a></div>
+                
+                <div class="w-100"></div>
+
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">Incorporation Services</a></div>
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">White Label Clients</a></div>
+
+                <div class="w-100"></div>
+                <div class="col-md-4 biz-col col-sm-8"><a href="#">BOC-3 Process Agent Service</a></div>
+                <div class="col-md-4 biz-col col-sm-8 invisible"></div>
+
+            </div>
+        </div>
+        
+    </div>
+    <footer> <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-logo.png" href="RAS.html" alt=""> </footer>
+</body>
+</html>

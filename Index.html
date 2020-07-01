@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.13/jquery.min.js'></script>
+    <link rel="stylesheet" src = "css/boostrap.css">
+    <title>Document</title>
+    <style type="text/css">
+        
+        body p{
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif
+
+        }
+        header img{
+            text-align: left;
+            padding-left:15px;
+            padding-top: 8px;
+        }
+        header .login{
+            text-align: right;
+            padding-right:20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        header .top a{ 
+            padding:8px 32px 8px 32px;
+        }
+        header .top-nav{
+            border-top:#dee2e6 1px solid;
+            text-align: right;
+        }
+        header .top-nav a {
+            padding-top:8px;
+        }
+        .top-fold, h1, h3{
+            padding: 0px;
+            margin-top:1em;
+            margin-bottom: 18px;
+            font-family: "Helvetica","Helvetica","Helvetica Neue","Arial",sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .top-fold p{
+            text-align: left;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif;
+        }
+        .top-fold span p{
+            display: block;
+            position: relative;
+            top: 10px;
+            text-align: center;
+            font-size: .85rem;
+        }
+        .services{
+            padding-top: 50px;
+            text-align: center;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif
+        }
+        .service{
+            margin-bottom:40px;
+        }
+        .benefits{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding:30px 5px 0px 5px;
+        }
+        .benefit{
+            padding: 10px;
+        }
+        .benefits2{
+            background:#28a745;
+            padding:30px 5px 20px 5px;
+        }
+        .benefits2 p{
+            color:white;
+        }
+        .cta{
+            padding-top:30px;
+            padding-bottom:80px;
+            text-align: center;
+        }
+        .standard h3{
+
+            text-align: left;
+        }
+        .standard img{
+            padding: 0 3rem;
+            max-width: 360px;
+            width: 100%;
+        }
+        .info{
+            margin-top:100px;
+            border-top:#28a745 2px solid;
+            border-width: 95%;
+            padding: 50px 0px 20px 0px;
+            text-align: center;
+        }
+        @media screen and (max-width: 500px){
+            div.info{
+            }
+        }
+        .users li{
+            text-align: left;
+            font: 18px/28px "Helvetica","Helvetica Neue","Arial",sans-serif;
+        }
+        .cta p{
+            text-align: center;
+        }
+        .users {
+            text-align: center;
+        }
+        footer{
+            margin-top:100px;
+            border-top:#dee2e6 1px solid;
+            border-bottom:#dee2e6 1px solid;
+            text-align: center;
+            background: #f7f7f7;
+            padding:15px;
+        }
+        footer img{
+            max-width: 150px;
+        }
+        .background {
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    span { 
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+        background: #fff; 
+        padding: 0 15px; 
+    }
+}
+
+    .double:before { 
+        /* this is just to undo the :before styling from above */
+        border-top: none; 
+    }   
+    .double:after {
+        border-bottom: 1px solid #4BA045;
+        -webkit-box-shadow: 0 1px 0 0 #4BA045;
+        -moz-box-shadow: 0 1px 0 0 #4BA045;
+        box-shadow: 0 1px 0 0 #4BA045;
+        content: "";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute;
+        top: 45%; left: 0; right: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    form.example input[type=text] {
+       padding: 5px;
+       font-size: 17px;
+       border: 1px solid grey;
+       background: #f1f1f1;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <!-- Header/nav, Top-fold, Services -->
+    <div class="container">
+        <header>
+            <div class="top">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="Index.html">
+                            <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                            <div class="login">
+                                    <a href="#">Login</a>
+                                    <button class="btn btn-success" href="#">Get Started</button>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="top-nav">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <ul class="nav" id="nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Solutions.html">Business Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Branches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Resources.html">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-none .d-xl-block">
+                            <div class="col col-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="top-fold">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <h1>Registered Agents, Inc.</h1>
+                    <p>
+                        Finding a registered agent service provider with intuitive, enterprise-level solutions can be challenging. At Registered Agents Inc., 
+                        we understand what you need because it’s all we do. We make our digital services a seamless extension of your business.
+                    </p>
+                    <p>
+                        Registered Agents Inc. serves as the foundation for more than 200 of the top registered agent services in the world. We power many law firms and incorporation services. 
+                        We also help tens of thousands of small business owners by providing the same great tools that the biggest, most complex conglomerates use to manage corporate compliance. 
+                        Whether you’re a startup, single-owner business, medium to large, or a top law firm, we’re here to help you.
+                    </p>
+                    <div class="background double">
+                        <button href="#" class="btn btn-success">Registered Agent for $200</button>
+                    </div>
+                        <span><p>One Time Yearly Service</p></span>
+                </div>
+                
+                <div class="w-100"></div>
+                
+                <div class="col-md-7 col-sm-12">
+                    <h3>What Registered Agents Inc. Provides:</h3>
+                    <p>
+                        Registered Agents Inc is your comprehensive solution to registered agent service and business entity maintenance. 
+                        Whether you’re seeking registered agent service for a start-up, 
+                        a multi-state corporate conglomerate, or wholesale service for thousands of clients, 
+                        Registered Agents Inc. is the right choice for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="row justify-content-around">
+                <div class="col-md-4 col-sm-9 service">
+                    <p>
+                        <strong>Individual Businesses</strong> Business owners seeking privacy, security, 
+                        and high-end business maintenance solutions hire Registered Agents Inc. 
+                        We have offices in every state, allowing national businesses to 
+                        use one registered agent everywhere they do business, and simplifies growth for newer businesses.
+                    </p>
+                    <div class="background double">
+                        <button href="#" class="btn btn-success">Registered Agent for $200</button>
+                    </div>     
+                </div>
+                
+                <div class="col-md-4 col-sm-9 service">
+                    <p>
+                        <strong>B2B Services</strong> Law firms and incorporation companies in need of a registered agent service 
+                        provider with unparalleled offerings at wholesale rates choose Registered Agents Inc. 
+                        We offer all clients the same intuitive and secure online accounts to manage thousands 
+                        of companies and clients with ease.
+                    </p>
+                    <div class="background double">
+                            <button href="#" class="btn btn-success">Wholesale Inquiries</button> 
+                    </div>  
+                </div>
+                
+            </div>
+        </div>
+</div>
+<div class="container-fluid">
+        <div class="benefits">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h3>BENEFITS</h3>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-2 col-sm-8 benefit">
+                    <p>
+                        <strong>Digital Reminders.</strong> Preventative alerts and due 
+                        date reminders keep you informed about upcoming deadlines.
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-8 benefit">
+                    <p>
+                        <strong>Compliance.</strong> Preventative alerts, due date reminders, 
+                        and our high-end customer service will help keep your company in good standing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefits2">
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-8 benefit">
+                <p>
+                    <strong>Instant Access.</strong> Online accounts and all state forms are available immediately after completing the signup process.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-8 benefit">
+                <p>
+                    <strong>Helpful Support.</strong> We have trained customer service specialists. No automated operators, just help whenever you need it.
+                </p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-2 col-sm-8 benefit">
+                <p>
+                    <strong>Business Resources.</strong> Every state form a business could ever file in any state is accessible through your online account.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-8 benefit">
+                <p>
+                    <strong>Nationwide Offices</strong> With offices in every state, we're ready to help as your business expands.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="cta">
+            <span>
+                    <p>Need Help? We are here to help. <a href="#">Email Us</a></p>
+                    <div class="background double">
+                        <button href="#" class="btn btn-success btn-lg">Registered Agent for $200</button>
+                    </div>
+            </span>
+        </div>
+
+        <div class="standard">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-satisfaction.png">
+                </div>
+                <div class="col-md-3 col-sm-8">
+                    <h3>The New Standard</h3>
+                    <p>
+                        Instant documents, real-time notifications, real-time customer support. Real people in our own buildings servicing you our clients. 
+                        Registered Agents Inc seeks to be an arm of your corporate management. 
+                        While we have an annual fee, we’re confident you’ll find us a valuable solution, not just an invoice.
+                    </p>
+                    
+                    <p>We’ll show you how to do corporate compliance yourself or let us do the work for you.</p>
+                    
+                    <p>If at anytime during your first year, you’re not happy, we’ll issue a 100% refund.</p>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div style="padding-top:50px;"></div>
+
+                <div class="col-md-3 col-sm-8">
+                    <h3>Privacy & Security</h3>
+                    <p>
+                        Everyone talks about privacy and security of your data. 
+                        Registered Agents Inc does not make money through ancilliary services, which means: we’re your end point. 
+                        Your data stays with us. A Registered Agent is your gatekeeper, serving as your only real connection to the outside world. 
+                        Providing your private corporate information to a registered agent is serious. 
+                        We have strict protocols to maintain your privacy at each of our 51 offices
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-security.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="info ">
+            <div class="row justify justify-content-center">
+                <div class="col-md-2 col-sm-1"><p><strong>Privacy<br>Included</strong></p></div>
+                <div class="col-md-2 col-sm-1"><p><strong>Offices in<br>Every State</strong></p></div>
+                <div class="col-md-2 col-sm-1"><p><strong>Secure<br>Online Accounts</strong></p></div>
+                <div class="col-md-2 col-sm-1"><p><strong>Digital<br>Notifications</strong></p></div>
+            </div>
+            <div class="background double">
+                <button href="#" class="btn btn-success btn-lg">Registered Agent for $200</button>
+            </div>
+        </div>
+</div>
+<div class="container">
+        <div class="users">
+            <h3>Who Uses Registered Agents Inc:</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-8 service">
+                    <ul>
+                        <li>Registered Agent Service Companies</li>
+                        <li>Solo Practitioner Law Firms</li>
+                        <li>Small and Medium-Sized Law Firm</li>
+                        <li>Am Law 100 Law Firms</li>
+                        <li>Any Top Legal Service Firm</li>
+                        <li>CPA’s and Accountants</li>
+                        <li>Starup Consultants</li>
+                        <li>Entrepreneurs</li>
+                        <li>Compliance Directors</li>
+                        <li>In-house Counsel</li>
+                        <li>Corporate Secretaries</li>
+                        <li>Paralegal</li>
+                        <li>Business Owners</li>
+                        <li>Fortune 1000 Companies</li>
+                    </ul>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-7 col-sm-8 service">
+                    <h3>Registered Agents, Inc. Difference</h3>
+                    <p>
+                        Registered Agents Inc is your solution for the new era of registered agent services. 
+                        We provide true wholesale registered agent services.
+                    </p>
+                    <p>
+                        The difference? Our entity management system is usable immediately. 
+                        You won’t need an in-house consultation or a webinar series to start using your account. 
+                        Through relentless usability testing, we’ve designed tools to allow intuitive, 
+                        streamline service of process notifications and compliance deadlines. 
+                        We believe a registered agent should be more than a service of process handler. 
+                        Our compliance network is synced with every state to use real-time data to power 
+                        the tools we provide you and, which in turn, you can provide to your clients.
+                    </p>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col-md-8 col-sm-8">
+                    <h3>Why is Registered Agents, Inc. your Best Choice:</h3>
+                </div>
+                    <div class="col-md-7 col-sm-8 service">
+                    <ul>
+                        <li>
+                            Our competitors simply try to mark down their service price to entice you to buy and re-sell their registered agent services. 
+                            We exist solely to be your back end service.
+                        </li>
+                        <li>
+                            We will be the cheapes price you find. No one can come anywhere close to the registered agent pricing we provide.
+                        </li>
+                        <li>
+                            When you use Registered Agents, Inc. yo provide services to your clients, you're getting a real, 
+                            registered office in every state, not just a third-party affiliate.
+                        </li>
+                    </ul>
+                    <p>
+                        Registered Agents, Inc. exists to help power your business to the next level. 
+                        Our service is fully customizable to your business’ needs and budget. 
+                        It’s your plan. We’re simply here to execute it. 
+                        Please reach out to us today to create your solution to registered agent services.
+                    </p>
+                    <div class="background double">
+                            <button href="#" class="btn btn-success">Registered Agent for $200</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+</div>
+    <footer> <img src="https://www.registeredagentsinc.com/wp-content/themes/registered-agent/assets/img/rai-logo.png" href="RAS.html" alt=""> </footer>
+</body>
+</html>
